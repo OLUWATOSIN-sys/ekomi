@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<style>
+.widget-container {
+            position: fixed;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            justify-content: start;
+            align-items: start;
+            gap: 10px; /* Adjust this gap as needed */
+            left: 40px;
+            bottom: 40px;
+        }
+    </style>
+<div class="widget-container">
+    <div class="widget-sticker">
+        <div class="inner">
+            <img src="assets/svg/Logo.svg" alt="Logo">
+            <div class="stick-text">feedback</div>
+            <img src="assets/svg/Iconstciker.svg" alt="icon">
+        </div>
+    </div>
+    <div class="widget-popup">
+        <div class="sff1">
+        <div class="pop-header">
+            <img src="assets/svg/Logogreen.svg" alt="Logo">
+            <div class="head-text">Customer feedback</div>
+        </div>
+        <form action="#">
+            <div class="pop-q-1">
+                <div class="q-1-exp">
+                    <div class="exp-text">How was your experience with us?</div>
+                    <div class="exp-asterisk">*</div>
+                </div>
+                <div class="rating q-1-stars">
+                    <span class="rating__result"></span> 
+                   <i class="rating__star far fa-star"></i>
+                   <i class="rating__star far fa-star"></i>
+                   <i class="rating__star far fa-star"></i>
+                   <i class="rating__star far fa-star"></i>
+                   <i class="rating__star far fa-star"></i>
+                </div>
+            </div>
+            <div class="pop-q-2">
+                <label for="textbox" class="q-2-comment">
+                    <div class="comm-text">Additional comments:</div>
+                    <div class="exp-asterisk">*</div>
+                </label>
+                <textarea class="q-2-box" id="textbox" type="text"></textarea>
+            </div>
+        <div class="pop-proof">
+            <div class="proof-text-1">Do you have a proof of purchase?</div>
+            <div class="proof-text-1 proof-text-2">If so, please upload it below. This will allow our moderation team to
+                <strong>verify your review.</strong></div>
+            <div class="proof-upload">
+                <button type="button">
+                    <a href="#">Choose file</a>
+                </button>
+                <div class="upload-text">No file chosen</div>
+            </div>
+        </div>
+        <div class="pop-button">
+            <div class="button-tcs">By submitting a review, you accept our
+                <a href="#" style="color: inherit;">Terms and conditions, Communication rules
+                    and Privacy policy</a>.</div>
+            <button type="submit">Submit review</button>
+        </div>
+    </form>
+        <div class="pop-corner"></div>
+        <button type="button" class="pop-close">
+            <img src="assets/svg/Iconclose.svg" alt="close icon">
+        </button>
+    </div>
+    </div>
+
+    </div>
+    
+</div>
+
+<body>
+
+</body>
+
+</html>
